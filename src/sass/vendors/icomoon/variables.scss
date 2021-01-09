@@ -1,0 +1,56 @@
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: $font-path !default;
+
+$ico-check: "\e949";
+$ico-facebook: "\e931";
+$ico-mail: "\e932";
+$ico-loop: "\e933";
+$ico-arrow-down: "\e934";
+$ico-arrow-left: "\e935";
+$ico-arrow-right: "\e936";
+$ico-arrow-up: "\e937";
+$ico-calendar-unticked: "\e938";
+$ico-calendar: "\e939";
+$ico-caret: "\e93a";
+$ico-close: "\e93b";
+$ico-credit-card: "\e93c";
+$ico-download: "\e93d";
+$ico-eye: "\e93e";
+$ico-file: "\e93f";
+$ico-heath-care: "\e940";
+$ico-minus: "\e941";
+$ico-patient: "\e942";
+$ico-plus: "\e943";
+$ico-refresh: "\e944";
+$ico-rss: "\e945";
+$ico-share: "\e946";
+$ico-twitter: "\e947";
+$ico-youtube: "\e948";
+
+
+$ico-library: (
+    'arrow-down':               $ico-arrow-down,
+    'arrow-left':               $ico-arrow-left,
+    'arrow-right':              $ico-arrow-right,
+    'caret':                    $ico-caret,
+    'arrow-up':                 $ico-arrow-up,
+    'calendar':                 $ico-calendar,
+    'credit-card':              $ico-credit-card,
+    'download':                 $ico-download,
+    'file':                     $ico-file,
+    'heath-care':               $ico-heath-care,
+    'patient':                  $ico-patient,
+    'rss':                      $ico-rss,
+    'minus':                    $ico-minus,
+    'share':                    $ico-share,
+    'close':                    $ico-close,
+    'loop':                     $ico-loop,
+    'plus':                     $ico-plus,
+    'twitter':                  $ico-twitter,
+    'calendar-unticked':        $ico-calendar-unticked,
+    'refresh':                  $ico-refresh,
+    'eye':                      $ico-eye,
+    'facebook':                 $ico-facebook,
+    'mail':                     $ico-mail,
+    'check':                    $ico-check
+)

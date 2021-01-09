@@ -58,6 +58,18 @@ module.exports = (env, options) => ({
         ]
       },
       {
+        test: /\.(woff|woff2)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/"
+            }
+          }
+        ]
+      },
+      {
         test: /\.(html)$/,
         use: {
           loader: "html-srcsets-loader",
