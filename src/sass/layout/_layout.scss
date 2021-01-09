@@ -1,0 +1,30 @@
+/*
+-----------------------------------------
+Layout
+-----------------------------------------
+*/
+
+.page-wrap{
+    position: relative;
+	overflow: hidden;
+    padding-top: rem($header-height);
+    
+    @include respond-below(lg){
+        padding-top: rem($header-height-lg);
+    }
+}
+/*
+-----------------------------------------
+Main
+-----------------------------------------
+*/
+.main{
+    margin-top: rem($main-spacing);
+    margin-bottom: rem($main-spacing);
+
+    @include respond-below(lg){
+        margin-top: rem($main-spacing-lg);
+        margin-bottom: rem($main-spacing-bottom-lg);
+    }
+}
+

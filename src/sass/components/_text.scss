@@ -1,0 +1,18 @@
+/*
+-----------------------------------------
+Text Global
+-----------------------------------------
+*/
+
+p {
+    @include spacing-first-last(30px);
+     // Link inside Pragraph
+     a{
+        color: $color-beta;
+        border-bottom: rem(3px) solid;
+
+        &:hover{
+            color: $color-gamma;
+        }
+    }
+}

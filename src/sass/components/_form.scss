@@ -1,0 +1,41 @@
+/*
+-----------------------------------------
+Form Control
+-----------------------------------------
+*/
+
+input,
+textarea,
+button{
+    &.form-control{
+        background-color: $color-delta;
+        background-image: none !important;
+        font-size: rem(13px);
+        line-height: rem(16px);
+        color: $color-alpha;
+        padding: rem(22px);
+        margin-top: 0;
+        border: rem(1px) solid transparent;
+        border-radius: 0;
+        box-shadow: none !important;
+        resize: none;
+        transition: all 0.2s ease-in-out;
+
+        @include focus(){
+            outline: none;
+            color: inherit;
+            border-color: $color-beta;
+            background-color: $white;
+        }
+
+        @include placeholder(){
+            color: $color-text-base;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        &:not(:last-child){
+            margin-bottom: rem(20px);
+        }
+    }
+}

@@ -1,0 +1,95 @@
+// Hamburger
+// ==================================================
+.hamburger {
+  $self: &;
+  padding: $hamburger-padding-y $hamburger-padding-x;
+  display: inline-flex;
+  cursor: pointer;
+  flex-direction: column;
+  transition-property: opacity, filter;
+  transition-duration: $hamburger-hover-transition-duration;
+  transition-timing-function: $hamburger-hover-transition-timing-function;
+
+  &-text {
+    text-transform: uppercase;
+    font-size: 10.5px;
+    padding-top: 8px;
+    transition: all 0.2s ease-in-out;
+    
+    &--white{
+      color: $white; 
+    }
+  }
+
+  &.active{
+    #{$self}-text{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  // Normalize (<button>)
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+
+  &:hover {
+    @if $hamburger-hover-use-filter == true {
+      filter: $hamburger-hover-filter;
+    }
+    @else {
+      opacity: $hamburger-hover-opacity;
+    }
+  }
+}
+
+.hamburger-box {
+  width: $hamburger-layer-width;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: $hamburger-layer-height / -2;
+
+  &,
+  &::before,
+  &::after {
+    width: $hamburger-layer-width;
+    height: $hamburger-layer-height;
+    background-color: $hamburger-layer-color;
+    border-radius: $hamburger-layer-border-radius;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+
+  &--white{
+    &,
+    &::before,
+    &::after {
+      background-color: $white;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+  }
+
+  &::after {
+    bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+  }
+}

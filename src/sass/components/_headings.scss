@@ -1,0 +1,39 @@
+/*
+-----------------------------------------
+Global Headings
+-----------------------------------------
+*/
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5{
+	font-family: $font-family-primary;
+	line-height: inherit;
+	font-weight: $font-weight-regular;
+	margin-bottom: 0;
+	&:not(:last-child){
+		margin-bottom: rem(30px);
+	}
+
+	a{
+        border-bottom: 0;
+        @include hover-focus-active(){
+            color: $color-text-base;
+        }
+    }
+}
+
+h1, .h1{
+	@include font-size($h1-font-size);
+}
+
+h2, .h2{
+	@include font-size($h2-font-size);
+}
+
+h3, .h3{
+	@include font-size($h3-font-size);
+}
+
+h4, .h4{
+	@include font-size($h4-font-size);
+}

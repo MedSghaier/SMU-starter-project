@@ -1,0 +1,38 @@
+/*
+-----------------------------------------
+List Bullet
+-----------------------------------------
+*/
+.list-bullet{
+    li{
+        padding-left: 20px;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $color-gamma;
+            width: rem(5px);
+            height: rem(5px);
+            border-radius: 50%;
+        }
+        &:not(:last-child){
+            margin-bottom: rem(15px);
+        }
+    }
+}
+
+/*
+-----------------------------------------
+Contact List
+-----------------------------------------
+*/
+.contact-list{
+    &__item{
+       &:not(:last-child){
+        margin-bottom:rem(10px);
+       }
+    }
+}

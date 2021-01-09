@@ -1,0 +1,178 @@
+/*
+-----------------------------------------
+Colors
+-----------------------------------------
+*/
+
+
+
+// Theme Colors
+$color-alpha:                 	#ffa838;
+$color-beta:               	  	#142c82;
+$color-gamma:               	#CC3F48;
+$color-delta:               	#f6f6f6;
+			
+
+$theme-colors: (
+	alpha:		   				$color-alpha,
+	beta: 		   				$color-beta,
+	gamma:						$color-gamma,
+	delta:						$color-delta
+
+);
+
+// Text Color
+$color-text-base:				$black !default;
+
+
+$text-colors: (
+	alpha:		   				$color-alpha,
+	beta: 		   				$color-beta,
+);
+
+// Box Shadows
+$side-box-shadow: 				0px 11px 40px 0px rgba($color-alpha, 0.05);
+$field-block-shadow:			0px 19px 57px 0px rgba($color-alpha, 0.1); 
+
+// Background
+$color-background-default:		$white;
+
+$color-background-alpha:		$color-alpha;
+$color-background-beta:			$color-beta;
+
+
+$background-colors: (
+	alpha:						$color-background-alpha,
+	beta:						$color-background-beta,
+);
+
+// Lines
+$color-line:					#ccc;
+$color-line--light:				rgba($color-alpha, 0.4);
+
+// Social
+$color-facebook:				#386cd7;
+$color-twitter:					#0eb4ea;
+
+/*
+-----------------------------------------
+Fonts
+-----------------------------------------
+*/
+
+// Font Path
+$font-path:                     '/src/fonts';
+
+// Font Family
+$font-family-primary:			'roboto', sans-serif;
+
+
+// Font Weight
+$font-weight-regular:			400;
+$font-weight-medium:			500;
+$font-weight-bold:				700;
+
+$font-weight: (
+	regular: 					$font-weight-regular,
+	medium: 					$font-weight-medium,
+	bold: 						$font-weight-bold,
+);
+
+// Font Style
+$font-style-italic :            italic;
+
+/*
+-----------------------------------------
+Font Size/Height
+-----------------------------------------
+*/
+
+// Html
+$html-font-size:				10px;
+$body-bg-color:					#eeeeee !default;
+
+// Global
+$font-family-base:              $font-family-primary;
+$font-size-base: (
+	null: 						16px,
+	lg: 						13px,
+);
+
+$line-height-base:            	1.5;
+$font-weight-base:            	$font-weight-regular;
+$font-color-base:               $color-text-base;
+
+// Headings
+$h1-font-size: (
+	null: 						(48px, 48px),
+	lg: 						(24px, 30px),
+);
+$h2-font-size: (
+	null: 						(36px, 30px),
+	lg: 						(28px, 30px),
+);
+$h3-font-size: (
+	null: 						(24px, 25px),
+	lg: 						(20px, 25px),
+);
+$h4-font-size: (
+	null: 						(18px, 20px),
+	lg:							(16px, 20px)
+);
+
+
+/*
+-----------------------------------------
+Spacing
+-----------------------------------------
+*/
+
+// Header 
+$header-height: 				120px;
+$header-height-lg: 				80px;
+
+//Main
+
+$main-spacing: 					100px;
+$main-spacing-lg: 				80px;
+$main-spacing-bottom-lg: 		160px;
+
+// Helpers
+$space-amounts: 				(5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70);
+$space-sides: 					(top, bottom, left, right);
+$space-directions: 				(y, x);
+
+// Wrapper
+$wrapper-spacing: 				70px;
+// Section
+$section-spacing: 				70px;
+// Field
+$field-spacing: (
+	null: 						80px,
+	md: 						50px, 
+);
+// Full Field Spacing
+$full-spacing: (				
+	null: 						100px,
+	md: 						80px, 					
+);
+// Row
+$row-spacing: (
+	null: 						30px,
+	md: 						30px, 
+);
+
+/*
+-----------------------------------------
+Breakpoints
+-----------------------------------------
+*/
+
+$breakpoints: (
+    xs: 						0,
+    sm: 						576px,
+    md: 						768px,
+    lg: 						992px,
+    xl: 						1200px,
+    xxl: 						1500px,
+);
