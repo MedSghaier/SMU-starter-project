@@ -3,3 +3,75 @@
 Header
 -----------------------------------------
 */
+
+.header{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    // Logo
+    &__logo{
+        display: block;
+        img{
+            width: 100px;
+            height: 80px;
+        }
+    }
+
+    // NAV
+    &__nav{
+        &-list{
+            display: flex;
+        }
+
+        &-item{
+            &:not(:last-child){
+                margin-right: 25px;
+            }
+        }
+
+        &-link{
+            display: block;
+            font-weight: $font-weight-medium;
+            position: relative;
+
+            &:after{
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $color-alpha--dark;
+
+
+                transform: scale(0);
+                transition: all 0.2s ease-in-out;
+            }
+            &:hover{
+                &:after{
+                    transform: scale(1);
+                }
+            }
+
+        }
+    }
+
+    // Utilities
+    &__utilities{
+        display: flex;
+        &-item{
+            display: block;
+            &:not(:last-child){
+                margin-right: 15px;
+            }
+
+            &:hover{
+                transform: scale(1.3);
+            }
+        }
+    }
+}

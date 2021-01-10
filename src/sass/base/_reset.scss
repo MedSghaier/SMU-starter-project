@@ -70,12 +70,12 @@ a{
 
 	&[href^="mailto:"],
 	&[href^="tel:"]{
-		color: $color-beta;
+		color: $color-alpha;
 		border-bottom: rem(2px) solid $color-beta;
 
 		&:hover{
-			color: $color-gamma;
-			border-color: $color-gamma;
+			color: $color-alpha--dark;
+			border-color: $color-alpha--dark;
 		}
 	}
 }
