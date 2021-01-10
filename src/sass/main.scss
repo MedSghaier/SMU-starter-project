@@ -46,3 +46,79 @@ Components
 @import "components/cards";
 @import "components/form";
 @import "components/buttons";
+
+.header {
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px , 0;
+        align-items: center;
+        background-color : $color-delta ;
+    }
+
+    //Logo
+    &__logo{
+        display: block;
+        img{
+            width: 100px;
+        }
+    }
+
+    &__nav{
+        &-list{
+            display: flex   ;
+            justify-content: space-around;
+            }
+        &-item{
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+        }
+        &-link{
+            display: block;
+            font-weight: $font-weight-medium;
+            position: relative;
+
+            &:after{
+                content : '';
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $color-beta;
+                transform: scale(0);
+                transition: all 0.2s ease-in-out;
+                
+            }
+            &:hover{
+                &:after{
+                    transform: scale(1);
+                }
+
+            }
+        }
+
+    }
+
+    &__utilities{
+        display: flex;
+        &-item{
+            position: relative;
+            display: block;
+            &:not(:last-child){
+                margin-right: 15px;
+            }
+            &:hover{
+               
+                    transform: scale(1.3);
+                
+            }
+            
+        }
+       
+        
+    }
+
+    
+}
