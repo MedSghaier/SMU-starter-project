@@ -7,17 +7,17 @@ Colors
 
 
 // Theme Colors
-$color-alpha:                 	#ffa838;
-$color-beta:               	  	#142c82;
-$color-gamma:               	#CC3F48;
-$color-delta:               	#f6f6f6;
+$color-alpha:                 	#7BED8D;
+$color-alpha--dark:             #0F9B0F;
+$color-beta:               		#F0F4F8;
+$color-beta--dark:              #DBE2ED;
 			
 
 $theme-colors: (
 	alpha:		   				$color-alpha,
-	beta: 		   				$color-beta,
-	gamma:						$color-gamma,
-	delta:						$color-delta
+	alpha--dark: 		   		$color-alpha--dark,
+	beta:						$color-beta,
+	beta--dark:					$color-beta--dark
 
 );
 
